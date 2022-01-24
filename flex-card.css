@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+}
+
+.card {
+  background-color: rgba(53, 53, 53, 0.082);
+  width: 350px;
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.card__media.card__media--16-9.demo-card__media {
+  width: 21.875rem;
+  height: 12.25rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.demo-card__primary {
+  padding: 10px 0 10px 10px;
+  background-color: white;
+}
+
+.demo-card__title.mdc-typography.mdc-typography--headline6 {
+  padding-bottom: 5px;
+  font-size: 1rem;
+}
+
+.demo-card__subtitle.mdc-typography.mdc-typography--subtitle2 {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.demo-card__secondary.mdc-typography.mdc-typography--body2 {
+  padding: 5px 10px;
+  font-size: 0.7rem;
+  color: grey;
+  background-color: white;
+}
+
+.card__actions {
+  background-color: white;
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+}
+
+.card__action-buttons {
+  padding: 5px 10px;
+  display: flex;
+  gap: 1rem;
+  margin-right: 0.5rem;
+}
+
+.card__action-icons {
+  display: flex;
+  gap: 2rem;
+}
+.mdc-button.card__action.card__action--button {
+  border: none;
+  background-color: white;
+  font-size: 0.8rem;
+  color: blue;
+}
+
+.mdc-button.card__action.card__action--button:hover {
+  cursor: pointer;
+}
+
+.card__action-icons > i {
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px 5px;
+
+  transition-delay: 0.1s;
+}
+
+.card__action-icons > i:hover {
+  background-color: lightgray;
+}
+
+/* card - text overlay on image */
+.card {
+  /* background-color: rgba(53, 53, 53, 0.082); */
+  background-color: rgb(250, 250, 250);
+  width: 350px;
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+/* START card header section */
+.card__heading-overlay .card__header {
+  position: relative;
+}
+
+.card__header .card__header-image {
+  width: 21.875rem;
+  height: 12.25rem;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.card__header .card__header-content {
+  width: 100%;
+  position: absolute;
+  padding: 7px;
+  line-height: 1.25;
+}
+
+/* This rule makes the header text white, adds a gradient background and is active only on overlay cards (.card__heading-overlay)  */
+.card__heading-overlay .card__header .card__header-content {
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  bottom: 3px;
+}
+
+.card__header-content .card__header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.card__header-content .card__header-author {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+/* END card header section */
+
+/* START card description */
+.card__description {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  /* justify-content: flex-start; */
+}
+
+.card__description .card__text {
+  background-color: rgb(208, 255, 208);
+  padding: 5px 10px;
+  color: grey;
+  font-size: 0.9rem;
+  /* margin-bottom: auto; */
+  /* flex-shrink: 0; */
+}
+
+.card__description .card__buttons {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  /* margin-top: 3rem; */
+  /* margin-top: auto; */
+}
+
+.card__buttons .card__action-buttons {
+  font: inherit;
+}
+
+.card__action-buttons > button {
+  background-color: transparent;
+  margin-right: 0.25rem;
+  border: none;
+  color: blue;
+}
+.card__action-buttons > button:hover {
+  cursor: pointer;
+}
+
+.card__action-buttons > button.card__action-button-read {
+  font: inherit;
+  /* background-color: aliceblue; */
+}
+
+.card__action-buttons > button.card__action-button-bookmark {
+  font: inherit;
+  /* background-color: gold; */
+}
+
+.card__description .card__icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  gap: 0.25rem;
+  padding: 0px 0.5rem;
+}
+
+.card__icons > i {
+  min-width: 2rem;
+  border-radius: 100%;
+  padding: 10px;
+  transition-delay: 0.1s;
+}
+
+.card__icons > i:hover {
+  background-color: lightgray;
+}
+/* END card description */

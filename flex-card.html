@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Component</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./flex-card.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="" tabindex="0">
+        <div class="card__media card__media--16-9 demo-card__media">
+          <img src="/images/card-one-image.jpg" alt="" />
+        </div>
+        <div class="demo-card__primary">
+          <h2 class="demo-card__title mdc-typography mdc-typography--headline6">
+            Our Changing Planet
+          </h2>
+          <h3
+            class="demo-card__subtitle mdc-typography mdc-typography--subtitle2"
+          >
+            by Kurt Wagner
+          </h3>
+        </div>
+        <div class="demo-card__secondary mdc-typography mdc-typography--body2">
+          Visit ten places on our planet that are undergoing the biggest changes
+          today.
+        </div>
+      </div>
+      <div class="card__actions">
+        <div class="card__action-buttons">
+          <button class="mdc-button card__action card__action--button">
+            <span class="mdc-button__ripple"></span> Read
+          </button>
+          <button class="mdc-button card__action card__action--button">
+            <span class="mdc-button__ripple"></span> Bookmark
+          </button>
+        </div>
+        <div class="card__action-icons">
+          <i class="fa fa-heart-o"></i>
+          <i class="fa fa-share-alt"></i>
+          <i class="fa fa-ellipsis-v"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- card2 -->
+
+    <div class="card card__heading-overlay">
+      <div class="card__header">
+        <img
+          class="card__header-image"
+          src="/images/card-one-image.jpg"
+          alt=""
+        />
+        <div class="card__header-content">
+          <h2 class="card__header-title">Our Changing Planet</h2>
+          <p class="card__header-author">by Kurt Wagner</p>
+        </div>
+      </div>
+
+      <div class="card__description">
+        <div class="card__text">
+          Visit ten places on our planet that are undergoing the biggest changes
+          today.
+        </div>
+        <div class="card__buttons">
+          <div class="card__action-buttons">
+            <button class="card__action-button-read">Read</button>
+            <button class="card__action-button-bookmark">Bookmark</button>
+          </div>
+          <div class="card__icons">
+            <i class="fa fa-heart-o"></i>
+            <i class="fa fa-share-alt"></i>
+            <i class="fa fa-ellipsis-v"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
