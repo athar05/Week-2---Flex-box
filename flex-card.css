@@ -7,9 +7,10 @@
 body {
   display: flex;
   font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
 }
 
-.card {
+/* .card {
   background-color: rgba(53, 53, 53, 0.082);
   width: 350px;
 
@@ -18,9 +19,9 @@ body {
   position: relative;
   margin: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-}
+} */
 
-.card__media.card__media--16-9.demo-card__media {
+/* .card__media.card__media--16-9.demo-card__media {
   width: 21.875rem;
   height: 12.25rem;
   border-top-left-radius: 0.5rem;
@@ -89,7 +90,7 @@ body {
 
 .card__action-icons > i:hover {
   background-color: lightgray;
-}
+} */
 
 /* card - text overlay on image */
 .card {
@@ -119,8 +120,12 @@ body {
 .card__header .card__header-content {
   width: 100%;
   position: absolute;
-  padding: 7px;
+  /* padding: 7px; */
   line-height: 1.25;
+}
+
+.card__header > h2 p {
+  padding: 0.5rem;
 }
 
 /* This rule makes the header text white, adds a gradient background and is active only on overlay cards (.card__heading-overlay)  */
@@ -133,10 +138,12 @@ body {
 .card__header-content .card__header-title {
   font-size: 1.35rem;
   font-weight: 700;
+  padding-left: 0.5rem;
 }
 .card__header-content .card__header-author {
   font-size: 1.1rem;
   font-weight: 300;
+  padding-left: 0.5rem;
 }
 /* END card header section */
 
@@ -149,7 +156,7 @@ body {
 }
 
 .card__description .card__text {
-  background-color: rgb(208, 255, 208);
+  /* background-color: rgb(208, 255, 208); */
   padding: 5px 10px;
   color: grey;
   font-size: 0.9rem;
@@ -211,3 +218,28 @@ body {
   background-color: lightgray;
 }
 /* END card description */
+
+.card__horizontal-header {
+  display: flex;
+}
+
+.card__horizontal-header-content .card__header-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  padding-left: 0.5rem;
+}
+.card__horizontal-header-content .card__header-author {
+  font-size: 1.1rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.card__horizontal-header-image img {
+  width: 120px;
+}
+
+.card__buttons {
+  display: flex;
+  gap: 3rem;
+}
