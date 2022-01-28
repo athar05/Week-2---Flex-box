@@ -18,12 +18,16 @@ body {
 
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  position: relative;
+  /* position: relative; */
   margin: 10px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 /* START card header section */
-.card__heading-overlay .card__header {
+/* .card__heading-overlay .card__header {
+  position: relative;
+} */
+
+.card__header {
   position: relative;
 }
 
@@ -35,9 +39,20 @@ body {
   overflow: hidden;
 }
 
+.card__header .card__header-content-overlay {
+  width: 50%;
+  position: absolute;
+  /* padding: 7px; */
+  line-height: 1.25;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  bottom: 3px;
+}
 .card__header .card__header-content {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   /* padding: 7px; */
   line-height: 1.25;
 }
@@ -48,9 +63,7 @@ body {
 
 /* This rule makes the header text white, adds a gradient background and is active only on overlay cards (.card__heading-overlay)  */
 .card__heading-overlay .card__header .card__header-content {
-  color: white;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-  bottom: 3px;
+  font: inherit;
 }
 
 .card__header-content .card__header-title {
@@ -100,7 +113,9 @@ body {
   background-color: transparent;
   margin-right: 0.25rem;
   border: none;
-  color: blue;
+  color: #6200ee;
+
+  font-weight: 600;
 }
 .card__action-buttons > button:hover {
   cursor: pointer;
@@ -159,5 +174,6 @@ body {
 
 .card__buttons {
   display: flex;
+  align-items: center;
   gap: 3rem;
 }
