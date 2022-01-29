@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+
+.drawer-container {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  width: 20%;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.drawer-container .drawer-header {
+  padding: 1rem 1rem;
+  background-color: aliceblue;
+}
+
+.drawer-header .drawer-header-title {
+  font-size: 1.5rem;
+}
+
+.drawer-header .drawer-header-email {
+  color: gray;
+  padding-top: 0.5rem;
+}
+
+.drawer-nav {
+  border-top: 1px solid #6200ee;
+}
+
+.drawer-nav {
+  padding: 1rem 1rem;
+}
+
+.drawer-nav > div {
+  padding: 1rem;
+  /* padding-left: 1rem; */
+  color: #6200ee;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.drawer-nav > div:hover {
+  background-color: lightgray;
+}
+
+i {
+  padding-right: 1.5rem;
+}

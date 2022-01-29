@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 1rem 2rem;
+  color: #6200ee;
+  text-align: center;
+}
+
+.chips-container {
+  display: flex;
+  background-color: aliceblue;
+  margin: 2rem 2rem;
+  width: 80%;
+  height: auto;
+  align-items: center;
+  border: 1px solid #6200ee;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+}
+
+.chips-container > div {
+  position: relative;
+  background-color: white;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 500;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: auto;
+  border: 1px solid #6200ee;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.chips-container > div:hover {
+  background-color: #6200ee;
+  color: white;
+}
+
+i {
+  margin-left: 1rem;
+}
